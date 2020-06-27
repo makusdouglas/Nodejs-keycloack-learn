@@ -58,6 +58,8 @@
 
         req.open('GET', url, true)
         req.setRequestHeader('authorization', 'Bearer ' + kc.token)
+        
+        console.log(req.setRequestHeader('authorization'))
 
         req.onreadystatechange = function () {
           if (req.readyState === 4) {

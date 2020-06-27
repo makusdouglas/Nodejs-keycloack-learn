@@ -1,8 +1,8 @@
 {
   "realm": "TestApp",
-  "auth-server-url": "http://localhost:8080/auth",
+  "auth-server-url": "http://localhost:8080/auth/",
   "ssl-required": "external",
-  "resource": "Mobile Application",
+  "resource": "frontend-application",
   "public-client": true,
   "confidential-port": 0
 }
