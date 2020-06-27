@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <script src="keycloak.js"></script>
+    
   </head>
 
   <body>
@@ -28,7 +29,7 @@
 
     <script>
       var kc = Keycloak();
-
+      
       kc.init()
         .success(function(authenticated) {
           console.log('keycloak initialised')
@@ -58,9 +59,6 @@
 
         req.open('GET', url, true)
         req.setRequestHeader('authorization', 'Bearer ' + kc.token)
-        
-        console.log(req.setRequestHeader('authorization'))
-
         req.onreadystatechange = function () {
           if (req.readyState === 4) {
             if (req.status === 200) {

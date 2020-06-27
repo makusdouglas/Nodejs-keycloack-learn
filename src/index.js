@@ -19,6 +19,7 @@ const kc = new Keycloak(
 
 // Our express web application
 const app = express();
+app.use(express.json());
 
 // Requests that aren't matched by express.static will pass through this
 // This function will perfrom some keycloak setup on the request object
@@ -41,7 +42,7 @@ app.use(routes);
 // This endpoint can be accessed without a bearer token
 
 // Serves static assets from www directory if matches are found
-app.use(express.static(join(__dirname, '..', 'www')));
+app.use('/home', express.static(join(__dirname, '..', 'www')));
 
 app.listen(3030, (err) => {
   if (err) {
