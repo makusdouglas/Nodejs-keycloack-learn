@@ -75,14 +75,15 @@ array-flatten@1.1.1:
   resolved "https://registry.yarnpkg.com/array-flatten/-/array-flatten-1.1.1.tgz#9a5f699051b1e7073328f2a008968b64ea2955d2"
   integrity sha1-ml9pkFGx5wczKPKgCJaLZOopVdI=
 
-asn1.js@^4.5.2:
-  version "4.10.1"
-  resolved "https://registry.yarnpkg.com/asn1.js/-/asn1.js-4.10.1.tgz#b9c2bf5805f1e64aadeed6df3a2bfafb5a73f5a0"
-  integrity sha512-p32cOF5q0Zqs9uBiONKYLm6BClCoBCM5O9JfeUSlnQLBTxYdTK+pW+nXflm8UkKd2UYlEbYz5qEi0JuZR9ckSw==
+asn1.js@^5.3.0:
+  version "5.4.1"
+  resolved "https://registry.yarnpkg.com/asn1.js/-/asn1.js-5.4.1.tgz#11a980b84ebb91781ce35b0fdc2ee294e3783f07"
+  integrity sha512-+I//4cYPccV8LdmBLiX8CYvf9Sp3vQsrqu2QNXRcrbiWvcx/UdlFiqUJJzxRQxgsZmvhXhn4cSKeSmoFjVdupA==
   dependencies:
     bn.js "^4.0.0"
     inherits "^2.0.1"
     minimalistic-assert "^1.0.0"
+    safer-buffer "^2.1.0"
 
 axios@^0.18.0:
   version "0.18.1"
@@ -349,7 +350,7 @@ ee-first@1.1.1:
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
-elliptic@^6.2.3:
+elliptic@^6.5.3:
   version "6.5.3"
   resolved "https://registry.yarnpkg.com/elliptic/-/elliptic-6.5.3.tgz#cb59eb2efdaf73a0bd78ccd7015a62ad6e0f93d6"
   integrity sha512-IMqzv5wNQf+E6aHeIqATs0tOLeOTwj1QKbRcS3jBbYkl5oLAserA8yJTT7/VyHUYG91PRmPyeQDObKLPpeS4dw==
@@ -700,13 +701,13 @@ json-buffer@3.0.0:
   resolved "https://registry.yarnpkg.com/json-buffer/-/json-buffer-3.0.0.tgz#5b1f397afc75d677bde8bcfc0e47e1f9a3d9a898"
   integrity sha1-Wx85evx11ne96Lz8Dkfh+aPZqJg=
 
-jwk-to-pem@^1.2.6:
-  version "1.2.6"
-  resolved "https://registry.yarnpkg.com/jwk-to-pem/-/jwk-to-pem-1.2.6.tgz#d507cece40089c5248e09ec68266a2030a9c6325"
-  integrity sha1-1QfOzkAInFJI4J7GgmaiAwqcYyU=
+jwk-to-pem@^2.0.0:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/jwk-to-pem/-/jwk-to-pem-2.0.4.tgz#774e168697a0b52054e8cfb0bcd57e0f4c398e2d"
+  integrity sha512-4CCK9UBHNWjWtfSHdyu3I6rA8vlN5cWqnVuwY0cOMyXtw6M1tP+yrM8GZpwk+P932Dc3cLag4d35B6CqyIf89A==
   dependencies:
-    asn1.js "^4.5.2"
-    elliptic "^6.2.3"
+    asn1.js "^5.3.0"
+    elliptic "^6.5.3"
     safe-buffer "^5.0.1"
 
 keycloak-admin@^1.13.0:
@@ -723,12 +724,12 @@ keycloak-admin@^1.13.0:
     url-join "^4.0.0"
     url-template "^2.0.8"
 
-keycloak-connect@~3.4.3:
-  version "3.4.3"
-  resolved "https://registry.yarnpkg.com/keycloak-connect/-/keycloak-connect-3.4.3.tgz#6775b599125d24d524f6e64a5e512fda00692c4e"
-  integrity sha1-Z3W1mRJdJNUk9uZKXlEv2gBpLE4=
+keycloak-connect@~4.8.3:
+  version "4.8.3"
+  resolved "https://registry.yarnpkg.com/keycloak-connect/-/keycloak-connect-4.8.3.tgz#822e13f6374b310f2f9651fb3357bd5453d2ebf7"
+  integrity sha512-4MRRDmztHl2c1JiyxoZO3aAkqeYQ06gKUXJQ5BjL1RGZuqDs2I8vmSUL+ou4Gm0NamoJa87daT1NBg98ZW1mhw==
   dependencies:
-    jwk-to-pem "^1.2.6"
+    jwk-to-pem "^2.0.0"
 
 keyv@^3.0.0:
   version "3.1.0"
@@ -1018,7 +1019,7 @@ safe-buffer@^5.0.1:
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.2.1.tgz#1eaf9fa9bdb1fdd4ec75f58f9cdb4e6b7827eec6"
   integrity sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==
 
-"safer-buffer@>= 2.1.2 < 3":
+"safer-buffer@>= 2.1.2 < 3", safer-buffer@^2.1.0:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
