@@ -12,7 +12,7 @@
   "dependencies": {
     "express": "~4.16.3",
     "keycloak-admin": "^1.13.0",
-    "keycloak-connect": "~3.4.3",
+    "keycloak-connect": "~4.8.3",
     "nodemon": "^2.0.4"
   }
 }
